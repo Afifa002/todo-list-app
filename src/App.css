@@ -1,0 +1,121 @@
+* {
+  background: #FFF0D1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #664343;
+}
+
+.InputBoxTo-Do {
+  width: 200px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  background: white;
+}
+
+.addto-do-btn {
+  width: 50px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgb(227, 58, 58);
+  color: white;
+  border: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  font-family: 'Arial', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.todo-item:hover {
+border: 2px solid rgb(109, 106, 106);
+}
+
+.todo-text {
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  margin-right: 20px;
+  background: white;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+.addto-do-btn:hover{
+  cursor: pointer;
+}
+
+.cmplt-btn, .dltbtn, .edit-btn, .save-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.cmplt-btn {
+  background-color: white;
+  color: green;
+}
+
+.cmplt-btn:hover, .edit-btn:hover, .save-btn:hover {
+  opacity: 0;
+}
+
+.dltbtn {
+  background-color: white;
+  color: red;
+}
+
+ 
+
+.todo-item.completed {
+  background-color: #d4edda;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.todo-list{
+  background: white;
+  border: 8px;
+}
+.edit-btn{
+  background: white;
+}
+.todo-actions{
+  background: white;
+}
+.cmplt-btn{
+  background: white;
+}
