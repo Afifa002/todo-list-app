@@ -4,12 +4,12 @@ import { ToDoList } from "./components/ToDoList";
 import { useState } from "react";
 
 function App() {
-  const [inputText, setInputText] = useState(""); // Input text state
-  const [tasks, setTasks] = useState([]); // Tasks list state
-  const [editingId, setEditingId] = useState(null); // ID for editing task
-  const [editText, setEditText] = useState(""); // Edit text
+  const [inputText, setInputText] = useState(""); 
+  const [tasks, setTasks] = useState([]); 
+  const [editingId, setEditingId] = useState(null); 
+  const [editText, setEditText] = useState("");
+  
 
-  // Function to add a new task
   const addTask = () => {
     if (inputText.trim()) {
       const newTask = {
@@ -17,8 +17,8 @@ function App() {
         text: inputText,
         completed: false,
       };
-      setTasks([...tasks, newTask]); // Add new task to the tasks array
-      setInputText(""); // Clear input field after adding
+      setTasks([...tasks, newTask]); 
+      setInputText(""); 
     }
   };
 

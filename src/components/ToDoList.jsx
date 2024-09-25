@@ -19,7 +19,7 @@ export function ToDoList({
         type="text"
         className="InputBoxTo-Do"
         placeholder="Enter the task to be done"
-        value={inputText} // Bind inputText to the input field
+        value={inputText}
         onChange={(e) => setInputText(e.target.value)}
       />
       <button className="addto-do-btn" onClick={addTask}>
